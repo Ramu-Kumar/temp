@@ -1,0 +1,79 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
+@import "_title_variable";
+
+@mixin display-flex($position, $align: center, $flex-dir: row) {
+  display: flex;
+  justify-content: $position !important;
+  align-items: $align;
+  flex-direction: $flex-dir;
+}
+
+@mixin font-style-title($font-size, $line-height, $font-weight) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+@mixin width-height-default($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin media-custom-breakpoint-down($value) {
+  @media (max-width: $value) {
+    @content;
+  }
+}
+
+@mixin media-custom-breakpoint-up($value) {
+  @media (min-width: $value) {
+    @content;
+  }
+}
+
+@mixin font-style(
+  $fontFamily,
+  $fontStyle,
+  $fontWeight,
+  $fontSize,
+  $lineHeight,
+  $color
+) {
+  font-family: $fontFamily;
+  font-style: $fontStyle;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+
+  @if $lineHeight {
+    line-height: $lineHeight;
+  }
+
+  @if $color {
+    color: $color;
+  }
+}
+
+@mixin page-brand-image-placeholder(
+  $bgUrl,
+  $bgRepeat,
+  $bgSize: false,
+  $bgPosX: false,
+  $bgPosY: false
+) {
+  background-image: $bgUrl;
+  background-repeat: $bgRepeat;
+
+  @if $bgSize {
+    background-size: $bgSize;
+  }
+
+  @if $bgPosX {
+    background-position-x: $bgPosX;
+  }
+
+  @if $bgPosY {
+    background-position-y: $bgPosY;
+  }
+}

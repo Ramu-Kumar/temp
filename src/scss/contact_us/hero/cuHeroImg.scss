@@ -1,0 +1,36 @@
+@import "./hero.scss";
+
+.cu-hero-img--cntr {
+    width: 710px;
+    height: 668px;
+
+    @include media-custom-breakpoint-down(1300px) {
+        width: 603px;
+        height: 567px;
+    }
+
+    @include media-custom-breakpoint-down(1200px) {
+        width: 590px;
+        height: 555px;
+    }
+
+    @include media-custom-breakpoint-down(1100px) {
+        width: 512px;
+        height: 481px;
+    }
+
+    @include media-breakpoint-down(md) {
+        width: 413px;
+        height: 356px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: 130px;
+        height: 161px;
+    }
+
+    .cu-hero-img {
+        width: 100%;
+        height: 100%;
+    }
+}

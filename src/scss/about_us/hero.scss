@@ -1,0 +1,111 @@
+@import "./_title_aboutUs.scss";
+
+.aboutus-container {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  margin-bottom: 68px;
+  .brand-img {
+    height: 690px;
+    float: right;
+    shape-margin: 180px;
+    margin: -30px -10px 10px 10px;
+  }
+  .page-title-text {
+    color: $_title_Teal;
+    margin: 136px 182px 16px 182px;
+    font-family: messina_sans_black;
+    @include font-style-title(54px, 58px, 900);
+    @-moz-document url-prefix() {
+      font-weight: lighter;
+    }
+  }
+  .page-title-info {
+    @include font-style-title(24px, 28px, 700);
+    color: $_title_navi_blue;
+    margin: 16px 182px 16px 182px;
+  }
+  
+
+  .icon-chevron-container {
+    position: absolute;
+    margin: 20px 20px 20px 184px;
+    left: 0;
+    bottom: 0;
+    img {
+      width: 36px;
+      height: 21px;
+    }
+  }
+  @include media-custom-breakpoint-down(1320px) {
+    .brand-img {
+      shape-margin: 60px;
+    }
+    
+  }
+
+  @include media-breakpoint-down(lg) {
+    .brand-img {
+      height: 510px;
+      shape-margin: 30px;
+    }
+    .page-title-text {
+      margin: 80px 120px 16px 182px;
+    }
+    .page-title-info {
+      margin: 16px 120px 16px 182px;
+    }
+   
+
+    .icon-chevron-container {
+      margin: 20px 20px 20px 184px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    margin-bottom: 30px;
+    .brand-img{
+      height: 400px;
+      margin: -20px -40px 10px 10px;
+    }
+    .page-title-text {
+      margin: 48px 38px 16px 38px;
+    }
+    .page-title-info {
+      margin: 16px 38px 16px 38px;
+    }
+    .icon-chevron-container {
+      display: none;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0px;
+    .brand-img {
+      float: none;
+      margin: -15px 0px 0px calc(50% - 209px);
+      height: 320px;
+    }
+    .page-title-text {
+      margin: 20px 20px 5px 20px;
+      @include font-style-title(30px, 36px, 900);
+      @-moz-document url-prefix() {
+        font-weight: lighter;
+      }
+    }
+    .page-title-info {
+      @include font-style-title(20px, 28px, 600);
+      margin: 5px 20px 5px 20px;
+    }
+  }
+
+  @include media-custom-breakpoint-down(460px) {
+    .brand-img {
+      height: auto;
+      width: calc(100% - 16px );
+      margin: 0px 8px 0px 8px;
+    }
+  }
+}

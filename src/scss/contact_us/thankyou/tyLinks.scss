@@ -1,0 +1,85 @@
+@import "./../../_title_mixins";
+@import "./../../_title_variable";
+
+.ty-links--cntr {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    width: 390px;
+
+    margin: 0px auto 100px 182px;
+
+    @include media-breakpoint-down(md) {
+        margin: 0px auto 60px 38px;
+
+        @include media-custom-breakpoint-down(800px) {
+            width: 340px;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        // width: 170px;
+        width: auto;
+        margin: 0 20px 40px 20px;
+    }
+
+    .child-a--tlc {
+        flex: 0 0 auto;
+
+        margin-bottom: 40px;
+
+        @include font-style($messina-sans-ff, normal, bold, 24px, 28px, #002b49);
+    }
+
+    .child-b--tlc {
+        flex: 0 0 auto;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        margin-bottom: 32px;
+
+        @include media-breakpoint-down(md) {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+    }
+
+    .cb-child-a--tlc {
+        margin-bottom: 10px;
+    }
+
+    .cbca-link-a-tlc {
+        @include font-style($messina-sans-ff, normal, bold, 16px, 28px, #002b49);
+    }
+
+    .cbcb-link-a-tlc {
+        @include font-style($messina-sans-ff, normal, bold, 16px, 28px, #002b49);
+    }
+
+    .cbca-link-a-tlc,
+    .cbcb-link-a-tlc {
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 16px;
+        padding-right: 16px;
+        border: 2px solid #002b49;
+        border-radius: 25px;
+
+        @include media-breakpoint-down(md) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .child-c--tlc {
+        flex: 0 0 auto;
+
+        @include font-style($messina-sans-ff, normal, bold, 20px, 28px, #00a6a0);
+    }
+}

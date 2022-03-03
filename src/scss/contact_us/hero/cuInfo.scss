@@ -1,0 +1,37 @@
+@import "./hero.scss";
+
+.cu-info--cntr {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    margin: 107px auto 67px 183px;
+
+    @include media-breakpoint-down(md) {
+        margin: 40px auto 32px 39px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        margin: 30px auto 0px 20px;
+    }
+
+    .child-a-cic {
+        margin-bottom: 32px;
+
+        @include font-style($messina-sans-ff, normal, 900, 54px, 58px, #f96459);
+
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 20px;
+            @include font-style($messina-sans-ff, normal, 900, 30px, 36px, #f96459);
+        }
+    }
+
+    .child-b-cic,
+    .child-c-cic {
+        @include font-style($messina-sans-ff, normal, bold, 24px, 28px, #002b49);
+
+        @include media-breakpoint-down(sm) {
+            @include font-style($messina-sans-ff, normal, bold, 16px, 26px, #002b49);
+        }
+    }
+}

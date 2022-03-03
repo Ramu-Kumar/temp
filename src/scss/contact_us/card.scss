@@ -1,0 +1,15 @@
+@import "./contact_us.scss";
+
+.contact-us-section-b-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    background-color: #e6f6f6;
+
+    @include media-breakpoint-down(md) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+    }
+}

@@ -1,0 +1,89 @@
+@import "../../_title_mixins";
+@import "../../_title_variable";
+.hbs-container * {
+    // border: 1px solid black;
+}
+.hbs-container {
+    margin-bottom: 40px;
+    @include media-breakpoint-down(md) {
+        margin-bottom: 48px;
+    }
+    
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 40px;
+    }
+
+    .hbs-title {
+        margin-top: 72px;
+        margin-right: 983px;
+        margin-bottom: 12px;
+        margin-left: 182px;
+
+        @include font-style($messina-sans-ff, normal, normal, 20px, 28px, #002b49);
+
+        @include media-custom-breakpoint-down(1400px) {
+            margin-right: 455px;
+        }
+
+        @include media-custom-breakpoint-down(1199px) {
+            margin-left: 120px;
+        }
+
+        @include media-breakpoint-down(md) {
+            margin-top: 72px;
+            margin-left: 38px;
+
+            @include font-style($messina-sans-ff, normal, normal, 20px, 28px, #002b49);
+        }
+
+        @include media-breakpoint-down(sm) {
+            margin-top: 55px;
+            margin-right: 82px;
+            margin-bottom: 5px;
+            margin-left: 20px;
+
+            @include font-style($messina-sans-ff, normal, normal, 16px, 26px, #002b49);
+        }
+    }
+
+    .hbs-sub-title {
+        margin-bottom: 142px;
+        margin-left: 182px;
+        width: 60%;
+
+        @include font-style($messina-sans-ff, normal, bold, 32px, 40px, #002b49);
+
+        @include media-custom-breakpoint-down(1199px) {
+            margin-left: 120px;
+        }
+
+        @include media-breakpoint-down(md) {
+            margin-right: 106px;
+            margin-bottom: 103px;
+            margin-left: 38px;
+
+            width: auto;
+
+            @include font-style($messina-sans-ff, normal, bold, 32px, 40px, #002b49);
+        }
+
+        @include media-breakpoint-down(sm) {
+            margin-right: 20px;
+            margin-bottom: 50px;
+            margin-left: 20px;
+
+            @include font-style($messina-sans-ff, normal, bold, 24px, 28px, #002b49);
+        }
+    }
+
+    .hbs-individual-step-container {
+        margin-bottom: 55px;
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 28px;
+        }
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 16px;
+        }
+    }
+}

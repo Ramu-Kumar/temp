@@ -1,0 +1,60 @@
+@import "./../../_title_mixins";
+@import "./../../_title_variable";
+
+.cu-hero--cntr * {
+    // border: 1px solid black;
+}
+
+.cu-hero--cntr {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    position: relative;
+
+    .child-a {
+        flex: 0 0 auto;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        justify-content: space-between;
+    }
+
+    .ca-child-a {
+        flex: 0 1 43%;
+
+        @include media-breakpoint-down(sm) {
+            flex: 0 0 54%;
+        }
+    }
+
+    .ca-child-b {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+
+    .child-b {
+        width: 28%;
+        flex: 0 0 auto;
+        margin-left: 183px;
+
+        @include media-breakpoint-down(md) {
+            flex: 0 0 auto;
+
+            width: auto;
+            margin-left: 157px;
+            margin-right: 157px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            flex: 0 0 auto;
+
+            width: auto;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+}

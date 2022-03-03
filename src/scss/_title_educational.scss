@@ -1,0 +1,602 @@
+@import "_title_mixins";
+@import "_title_variable";
+
+//****************************  ELP RichText with Right Rail **********************************//
+
+.wrapper-rail {
+  position: relative;
+  display: flex;
+  .left-rail {
+    width: 65%;
+    padding: 30px 30px 30px 182px;
+    @include media-breakpoint-down(lg) {
+      padding: 30px 30px 30px 120px;
+    }
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      padding: 20px 97px 30px 97px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 20px 20px 20px 20px;
+    }
+  }
+  .right-rail {
+    background-image: url($Elp-bg-Img);
+    background-repeat: no-repeat;
+    background-position: 10px 20px;
+    width: 35%;
+    background-size: 100% 100%;
+    height: 700px;
+    position: sticky;
+    top: 80px;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+}
+
+.rightRail-shortscreen {
+  display: none;
+  position: sticky;
+  top: 80px;
+  margin: auto;
+  max-width: 250px;
+  padding: 10px;
+  height: 50px;
+  z-index: 1;
+  border-radius: 10px;
+  background: $_title_light_Teal;
+  @include media-breakpoint-down(md) {
+    @include display-flex(space-around);
+  }
+  @include media-breakpoint-down(sm) {
+    top: 60px;
+  }
+
+  img {
+    width: 25px;
+  }
+
+  .dropdown-menu.show {
+    left: -53% !important;
+    transform: translate3d(57px, 45px, 0px) !important;
+    top: 8px !important;
+    padding: 20px;
+    width: 400px;
+    overflow-y: scroll;
+    max-height: 500px;
+    a {
+      white-space: unset !important;
+    }
+    @include media-custom-breakpoint-down(450px) {
+      max-height: 400px;
+      left: -24% !important;
+      transform: translate3d(57px, 45px, 0px) !important;
+      top: 8px !important;
+      padding: 5px;
+      width: 250px;
+    }
+  }
+
+  .nav-link {
+    span {
+      @include font-style-title(20px, 28px, 700);
+      color: $_title_navi_blue !important;
+    }
+  }
+}
+.rightrail-leftArrow {
+  transform: rotate(180deg);
+}
+
+.right-rail-card {
+  background: white;
+  position: sticky;
+  width: 75%;
+  margin: 20px auto;
+  box-shadow: 0 0px 6px -3px rgba(0, 0, 0, 0.175);
+  padding: 30px 30px 30px 45px;
+  border-radius: 10px;
+
+  ul {
+    padding-inline-start: 0px;
+    li {
+      a {
+        color: $md-grey !important;
+        @include font-style-title(16px, 24px, 700);
+      }
+      list-style: none;
+      margin: 20px 0px;
+    }
+    li.active::before {
+      background-image: url($Right-Arrow);
+      background-size: 25px 25px;
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      content: "";
+      position: absolute;
+      left: 10px;
+    }
+    li.active {
+      a {
+        color: $_title_navi_blue !important;
+        text-decoration: underline;
+      }
+    }
+  }
+  h6 {
+    @include font-style-title(24px, 28px, 700);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $_title_navi_blue;
+  }
+  .rightrail-arrows {
+    width: 100%;
+    @include display-flex(flex-start);
+    img {
+      width: 25px;
+      margin: 10px 25px;
+    }
+  }
+}
+
+.rich-text-content {
+  li::marker {
+    color: $_title_Teal;
+  }
+
+  h3 {
+    @include font-style-title(24px, 28px, 700);
+    color: $dark_grey;
+    @include media-breakpoint-down(sm) {
+      @include font-style-title(20px, 26px, 700);
+    }
+  }
+  h4 {
+    @include font-style-title(20px, 28px, 700);
+    color: $dark_grey;
+    @include media-breakpoint-down(sm) {
+      @include font-style-title(16px, 26px, 700);
+    }
+  }
+}
+
+.elp-heading {
+  @include font-style-title(26px, 30px, 700);
+  color: $_title_navi_blue;
+  margin: 20px 0px;
+  @include media-breakpoint-down(sm) {
+    margin: 15px 0px;
+    @include font-style-title(20px, 28px, 700);
+  }
+}
+.elp-text-normal {
+  @include font-style-title(20px, 32px, 400);
+  color: $dark_grey;
+  @include media-breakpoint-down(sm) {
+    @include font-style-title(16px, 26px, 400);
+  }
+}
+
+.elp-text-h4 {
+  @include font-style-title(24px, 28px, 700);
+  color: $dark_grey;
+  @include media-breakpoint-down(sm) {
+    @include font-style-title(20px, 26px, 700);
+  }
+}
+.elp-text-h6 {
+  @include font-style-title(20px, 28px, 700);
+  color: $dark_grey;
+  @include media-breakpoint-down(sm) {
+    @include font-style-title(16px, 26px, 700);
+  }
+}
+
+.left-rail {
+  p {
+    margin: 20px 0px;
+    @include media-breakpoint-down(sm) {
+      margin: 15px 0px;
+    }
+  }
+  ul {
+    margin: 20px 0px;
+    @include media-breakpoint-down(sm) {
+      margin: 15px 0px;
+    }
+  }
+  a {
+    margin: 15px 0px;
+    display: inline-block;
+    @include media-breakpoint-down(sm) {
+      margin: 8px 0px;
+    }
+    @include media-custom-breakpoint-down(500px) {
+      margin: 5px 0px;
+    }
+  }
+  .dropdown-menu a {
+    margin: 5px 0px;
+  }
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.6em !important;
+  vertical-align: 0em !important;
+  content: "";
+  border-top: 0.5em solid !important;
+  border-right: 0.5em solid transparent !important;
+  border-bottom: 0;
+  border-left: 0.5em solid transparent !important;
+  color: $_title_navi_blue;
+}
+
+.show .dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.6em !important;
+  vertical-align: 0em !important;
+  content: "";
+  border-top: 0em solid !important;
+  border-right: 0.5em solid transparent !important;
+  border-bottom: 0.5em solid !important;
+  border-left: 0.5em solid transparent !important;
+}
+
+.btn-elp {
+  padding: 0px 16px;
+  @include font-style-title(16px, 28px, 700);
+  border-radius: 28px;
+  outline: none;
+}
+
+//****************************  ELP Card Module ******************************//
+
+.elp-module-3 {
+  padding: 20px 180px;
+  background: $_title_light_Topaz;
+  .elp-signup-box {
+    margin: 30px 0px;
+    @include display-flex(space-between, center);
+    flex-direction: row;
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+  }
+  .elp-newsletter {
+    width: 190px;
+    height: 162px;
+    display: flex;
+    justify-content: flex-end;
+    img {
+      height: 100%;
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 154px;
+      height: 136px;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      height: 80px;
+      order: 1;
+    }
+  }
+  .elp-email-signup {
+    width: 70%;
+    @include media-breakpoint-down(sm) {
+      order: 2;
+      width: 100%;
+    }
+  }
+  .elp-card-faqs,
+  .elp-email-signup {
+    p {
+      @include font-style-title(20px, 28px, 400);
+      color: $dark_grey;
+      margin: 15px 0px;
+
+      a {
+        color: $_title_navi_blue;
+        img {
+          margin-left: 5px;
+          width: 12px;
+        }
+      }
+      @include media-breakpoint-down(sm) {
+        margin: 5px 0px;
+        @include font-style-title(16px, 26px, 400);
+      }
+    }
+  }
+  .elp-card-faqs {
+    p {
+      margin: 15px 20px 15px 0px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 20px 120px;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 20px 38px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 20px 20px;
+  }
+}
+
+.elp-faq-link {
+  position: relative;
+}
+.elp-faq-link::after {
+  background-image: url($RightArrowBold);
+  background-size: 1em 1.7em;
+  display: inline-block;
+  width: 1em;
+  height: 1.7em;
+  content: "";
+  position: absolute;
+  right: -1.2em;
+  @include media-breakpoint-down(md) {
+    background-size: 1em 1.8em;
+    height: 1.8em;
+  }
+}
+
+//****************************  ELP hero component ******************************//
+
+.elp-hero-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 610px;
+  @include media-breakpoint-down(sm) {
+  }
+  .elp-left-content {
+    margin-left: 182px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 35%;
+    height: 100%;
+    h1 {
+      @include font-style-title(45px, 50px, 900);
+      font-family: messina_sans_black;
+      color: $_title_coral;
+      margin: 0;
+      @include media-breakpoint-down(md) {
+        @include font-style-title(36px, 42px, 900);
+      }
+      @include media-breakpoint-down(sm) {
+        @include font-style-title(30px, 36px, 900);
+      }
+      @-moz-document url-prefix() {
+        font-weight: lighter;
+      }
+    }
+    h2 {
+      @include font-style-title(38px, 42px, 400);
+      margin: 0;
+      color: $_title_coral;
+      @include media-breakpoint-down(md) {
+        @include font-style-title(32px, 36px, 400);
+      }
+      @include media-breakpoint-down(sm) {
+        @include font-style-title(26px, 30px, 400);
+      }
+    }
+    p {
+      @include font-style-title(26px, 30px, 700);
+      color: $_title_navi_blue;
+      margin: 10px 0px;
+      @include media-breakpoint-down(sm) {
+        @include font-style-title(20px, 28px, 700);
+        margin: 5px 0px;
+      }
+    }
+    a {
+      width: 240px;
+      margin: 26px 0px;
+      @include display-flex(center);
+      @include media-breakpoint-down(md) {
+        width: 200px;
+      }
+      @include media-breakpoint-down(sm) {
+        max-width: 228px;
+        margin: 15px 0px;
+      }
+    }
+    @include media-breakpoint-down(lg) {
+      margin-left: 120px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-left: 38px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin: 0;
+      justify-content: flex-start;
+      order: 2;
+      width: 100%;
+    }
+  }
+  .elp-right-content {
+    width: 65%;
+    text-align: right;
+    height: 100%;
+    position: relative;
+    img {
+      max-width: 100%;
+      max-height: 610px;
+      margin-top: 0px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+    @include media-breakpoint-down(sm) {
+      @include display-flex(flex-end);
+      flex-direction: column;
+      height: 380px;
+      width: 100%;
+      order: 1;
+    }
+    @include media-custom-breakpoint-down(680px) {
+      height: 350px;
+    }
+    @include media-custom-breakpoint-down(560px) {
+      height: 310px;
+    }
+    @include media-custom-breakpoint-down(480px) {
+      height: 250px;
+    }
+    @include media-custom-breakpoint-down(350px) {
+      height: 200px;
+    }
+  }
+  .chevron-icon-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    img {
+      width: 36px;
+      height: 21px;
+    }
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+  @include media-custom-breakpoint-down(1350px) {
+    height: 570px;
+  }
+  @include media-custom-breakpoint-down(1250px) {
+    height: 530px;
+  }
+
+  @include media-custom-breakpoint-down(1160px) {
+    height: 500px;
+  }
+  @include media-custom-breakpoint-down(1080px) {
+    height: 460px;
+  }
+  @include media-breakpoint-down(md) {
+    height: 440px;
+  }
+  @include media-custom-breakpoint-down(880px) {
+    height: 390px;
+  }
+  @include media-custom-breakpoint-down(830px) {
+    height: 360px;
+  }
+  @include media-custom-breakpoint-down(790px) {
+    height: 340px;
+  }
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+.mrkto-subscribe-form {
+  #LblEmail {
+    display: none;
+  }
+  .mktoOffset {
+    display: none;
+  }
+  .mktoForm {
+    margin-top: 30px;
+    padding: 0px !important;
+    display: flex !important;
+    #Email {
+      width: 300px !important;
+    }
+    .mktoError {
+      left: 0px !important;
+    }
+    .mktoButtonRow {
+      margin: 10px 30px;
+      min-width: 200px !important;
+    }
+    .mktoFieldWrap {
+      margin-bottom: 0rem !important;
+    }
+    .mktoFieldDescriptor {
+      margin-bottom: 0rem !important;
+    }
+    .mktoButtonWrap {
+      padding-left: 0px !important;
+    }
+    .mktoGutter {
+      display: none;
+    }
+    .mktoFormRow {
+      align-items: flex-end;
+    }
+    button.mktoButton {
+      padding: 2px 16px !important;
+      width: 160px !important;
+      font-size: 16px !important;
+      line-height: 28px !important;
+      font-weight: 700 !important;
+      outline: none !important;
+      border: none !important;
+    }
+    button.mktoButton:hover {
+      background: $_title_navi_blue !important;
+    }
+    input.mktoField {
+      border-width: 2px !important;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .mktoForm {
+      flex-direction: column !important;
+      .mktoFormRow {
+        justify-content: flex-start;
+      }
+
+      .mktoButtonRow {
+        display: block;
+        text-align: start;
+      }
+
+      .mktoButtonRow {
+        margin: 20px 0px;
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    .mktoForm {
+      .mktoFormCol {
+        width: 100%;
+        .mktoFieldWrap {
+          width: 100% !important;
+        }
+      }
+
+      .mktoButton {
+        width: 100% !important;
+      }
+
+      #Email {
+        width: 100% !important;
+      }
+      button.mktoButton {
+        width: 100% !important;
+      }
+      .mktoButtonRow {
+        margin: 30px 0px;
+      }
+    }
+    .mktoForm .mktoButtonWrap {
+      padding-left: 0px !important;
+    }
+  }
+}

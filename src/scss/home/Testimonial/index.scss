@@ -1,0 +1,160 @@
+@import "../../_title_mixins";
+@import "../../_title_variable";
+
+.testimonial-root--cntr * {
+    // border: 1px solid black;
+}
+
+.testimonial-root--cntr {
+    width: 100%;
+
+    .testimonial--cntr {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        margin-left: 182px;
+
+        @include media-custom-breakpoint-down(1199px) {
+            margin-left: 120px;
+        }
+
+        @include media-breakpoint-down(md) {
+            margin-left: 38px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            margin-left: 20px;
+        }
+    }
+
+    .child-a-tt {
+        margin-top: 80px;
+        @include font-style($messina-sans-ff, normal, normal, 20px, 28px, #002b49);
+
+        @include media-breakpoint-down(sm) {
+            margin-top: 30px;
+            margin-bottom: 5px;
+
+            @include font-style($messina-sans-ff, normal, normal, 16px, 26px, #002b49);
+        }
+    }
+
+    .child-b-tt {
+        margin-bottom: 56px;
+        @include font-style($messina-sans-ff, normal, bold, 32px, 40px, #002b49);
+
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 30px;
+            @include font-style($messina-sans-ff, normal, bold, 24px, 28px, #002b49);
+        }
+    }
+
+    .child-c-tt--cntr {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        margin-bottom: 30px;
+
+        @include media-breakpoint-down(sm) {
+            flex-direction: column;
+        }
+    }
+
+    .cc-child-a-tt {
+        flex: 0 1 412px;
+
+        @include font-style($messina-sans-ff, normal, normal, 20px, 28px, #3d3935);
+
+        @include media-breakpoint-down(md) {
+            flex: 0 1 330px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            order: 2;
+            flex: 0 0 auto;
+
+            margin-right: 20px;
+            margin-bottom: 20px;
+            @include font-style($messina-sans-ff, normal, normal, 16px, 26px, #3d3935);
+        }
+    }
+
+    .cc-child-b-tt {
+        flex: 0 1 710px;
+
+        @include media-breakpoint-down(md) {
+            flex: 0 1 323px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            order: 1;
+            flex: 0 0 auto;
+
+            margin-bottom: 30px;
+        }
+    }
+
+    .child-d-tt {
+        margin-bottom: 8px;
+        @include font-style($messina-sans-ff, normal, bold, 24px, 28px, #00a6a0);
+
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 5px;
+            @include font-style($messina-sans-ff, normal, bold, 20px, 28px, #00a6a0);
+        }
+    }
+
+    .child-e-tt {
+        @include font-style($messina-sans-ff, normal, normal, 16px, 26px, #3d3935);
+
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 12px;
+            @include font-style($messina-sans-ff, normal, normal, 16px, 26px, #3d3935);
+        }
+    }
+
+    .child-f-tt--cntr {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        height: 50px;
+        align-items: center;
+        margin-bottom: 53px;
+
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .cfca-child-a,
+    .cfcb-child-a {
+        border: none;
+        background: none;
+        outline: none;
+    }
+
+    .cfca-child-a:hover,
+    .cfcb-child-a:hover {
+        cursor: pointer;
+    }
+
+    .cfca-child-a {
+        margin-right: 12px;
+    }
+
+    .cfca-img {
+        width: 34px;
+    }
+
+    .cfcb-img {
+        width: 57px;
+    }
+
+    .disabled-link {
+        pointer-events: none;
+    }
+}

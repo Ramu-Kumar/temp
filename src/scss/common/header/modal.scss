@@ -1,0 +1,119 @@
+@import "../../_title_mixins";
+@import "../../_title_variable";
+
+.title-search-modal {
+  position: fixed;
+  background-color: $_title_light_Grey;
+  z-index: 10;
+  top: 80px;
+  height: 0px;
+  width: 100%;
+  overflow: hidden;
+  transition: height 0.4s;
+  .search-title {
+    margin: 120px 350px 32px 350px;
+    @include font-style-title(24px, 28px, 700);
+    color: $_title_navi_blue;
+    font-family: messina_sans_semi_bold;
+    @-moz-document url-prefix() {
+      font-weight: lighter;
+    }
+  }
+  .global-search-container {
+    position: relative;
+    height: 58px;
+    margin: 32px 350px 32px 350px;
+    form {
+      width: 100%;
+      height: 100%;
+      .global-search-input {
+        outline: 0;
+        width: 100%;
+        height: 100%;
+        border: 1px solid $_title_border;
+        border-radius: 5px;
+        padding: 10px 90px 10px 40px;
+        @include font-style-title(16px, 26px, 400);
+      }
+      ::-ms-clear {
+        display: none;
+      }
+    }
+    .search-icon {
+      position: absolute;
+      left: 16px;
+      top: calc(50% - 8px);
+      width: 16px;
+      height: 16px;
+    }
+    .right-arrow-icon {
+      position: absolute;
+      right: 16px;
+      top: calc(50% - 7px);
+      width: 58px;
+      height: 14px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    .global-search-container {
+      margin: 32px 200px 32px 200px;
+    }
+    .search-title {
+      margin: 100px 200px 32px 200px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .global-search-container {
+      margin: 32px 38px 32px 38px;
+    }
+    .search-title {
+      margin: 80px 38px 32px 38px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    top: 60px;
+    .search-title {
+      margin: 30px 20px 20px 20px;
+      @include font-style-title(20px, 28px, 700);
+      @-moz-document url-prefix() {
+        font-weight: lighter;
+      }
+    }
+    .global-search-container {
+      height: 50px;
+      margin: 20px 20px 20px 20px;
+      form {
+        .global-search-input {
+          @include font-style-title(12px, 16px, 400);
+          padding: 8px 55px 8px 40px;
+        }
+      }
+
+      .right-arrow-icon {
+        right: 14px;
+        width: 38px;
+      }
+    }
+  }
+}
+
+.title-search-modal.show {
+  height: 100vh;
+  overflow: hidden;
+}
+
+// .navbar-search:focus::before {
+//   content: "";
+//   position: absolute;
+//   border-color: $md-grey;
+//   border-style: solid;
+//   background: $md-grey;
+//   border-width: 2px;
+//   left: 0em;
+//   bottom: -20px;
+//   width: 100%;
+// }
+
+// a:focus::after {
+//   content: none !important;
+// }

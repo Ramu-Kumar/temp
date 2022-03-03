@@ -1,0 +1,120 @@
+@import "../_title_mixins";
+@import "../_title_variable";
+
+.county-by-county-container {
+  padding: 80px 182px 80px 182px;
+  .county-by-county-desc {
+    color: $_title_navi_blue;
+    @include font-style-title(20px, 28px, 400);
+  }
+  .county-by-county-title {
+    margin-bottom: 96px;
+    font-family: messina_sans_semi_bold;
+    color: $_title_navi_blue;
+    @include font-style-title(32px, 40px, 700);
+    @-moz-document url-prefix() {
+      font-weight: lighter;
+    }
+  }
+  .county-card-container {
+    @include display-flex(space-between, flex-start);
+    .county-card {
+      width: 29%;
+      @include display-flex(flex-start, flex-start);
+      flex-direction: column;
+      .county-card-counter {
+        margin-bottom: 64px;
+        font-family: messina_sans_semi_bold;
+        @include font-style-title(92px, 58px, 700);
+        @-moz-document url-prefix() {
+          font-weight: lighter;
+        }
+      }
+      .county-card-desc {
+        width: 100%;
+        .county-card-title {
+          font-family: messina_sans_semi_bold;
+          color: $_title_navi_blue;
+          @include font-style-title(32px, 40px, 700);
+          @-moz-document url-prefix() {
+            font-weight: lighter;
+          }
+        }
+        p {
+          color: $dark_grey;
+          margin: 0;
+          @include font-style-title(20px, 28px, 400);
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 60px 120px 60px 120px;
+    .county-by-county-title {
+      margin-bottom: 80px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    padding: 34px 38px 34px 38px;
+    .county-by-county-title {
+      margin-bottom: 64px;
+    }
+    .county-card-container {
+      .county-card {
+        .county-card-counter {
+          margin-bottom: 32px;
+          @include font-style-title(72px, 58px, 700);
+        }
+        .county-card-desc {
+          .county-card-title {
+            @include font-style-title(26px, 30px, 700);
+          }
+          p {
+            @include font-style-title(16px, 26px, 400);
+          }
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 20px 20px 20px 20px;
+    .county-by-county-desc {
+      @include font-style-title(16px, 26px, 400);
+    }
+    .county-by-county-title {
+      margin-bottom: 20px;
+      @include font-style-title(24px, 28px, 700);
+    }
+    .county-card-container {
+      flex-direction: column;
+      align-items: center;
+      .county-card {
+        margin: 20px;
+        width: 100%;
+        @include display-flex(flex-start, center);
+        .county-card-counter {
+          @include display-flex(center, center);
+          padding: 0px 20px 0px 0px;
+          width: 40%;
+          margin-bottom: 0px;
+          @include font-style-title(64px, 58px, 700);
+        }
+        .county-card-desc {
+          width: 70%;
+          .county-card-title {
+            @include font-style-title(20px, 28px, 700);
+          }
+        }
+      }
+      .county-card:nth-child(2) {
+        .county-card-counter {
+          padding: 0px 0px 0px 20px;
+          order: 2;
+        }
+        .county-card-desc {
+          order: 1;
+        }
+      }
+    }
+  }
+}

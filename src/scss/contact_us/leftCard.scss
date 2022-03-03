@@ -1,0 +1,97 @@
+@import "./card.scss";
+
+.contact-us-section-b-container {
+    .child-a {
+        flex: 1 1 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        margin-top: 66px;
+        margin-right: 20px;
+        margin-bottom: 204px;
+        margin-left: 182px;
+        background-color: #ffffff;
+        box-shadow: 5px 8px 10px -12px #3d3935;
+
+        @include media-breakpoint-down(md) {
+            height: auto;
+            flex: 0 0 auto;
+            margin-top: 80px;
+            margin-right: 159px;
+            margin-bottom: 20px;
+            margin-left: 157px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            flex: 0 0 auto;
+            margin-top: 40px;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .ca-heading-a {
+        margin: 32px 32px 8px 32px;
+        flex: 0 0 auto;
+        @include font-style(messina_sans, normal, bold, 20px, 28px, #3d3935);
+
+        @include media-breakpoint-down(md) {
+            flex: 0 0 auto;
+            @include font-style(messina_sans, normal, bold, 20px, 28px, #3d3935);
+        }
+
+        @include media-breakpoint-down(sm) {
+            flex: 0 0 auto;
+            @include font-style(messina_sans, normal, bold, 20px, 28px, #3d3935);
+        }
+    }
+
+    .ca-heading-b {
+        margin: 40px 32px 8px 32px;
+        flex: 0 0 auto;
+        @include font-style(messina_sans, normal, bold, 20px, 28px, #3d3935);
+
+        @include media-breakpoint-down(md) {
+        }
+
+        @include media-breakpoint-down(sm) {
+        }
+    }
+
+    .ca-phone-container-a,
+    .ca-phone-container-b {
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        margin-left: 33px;
+    }
+
+    .ca-phone-container-b {
+        margin-bottom: 32px;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 32px;
+        }
+    }
+
+    .capca-icon-container,
+    .capcb-icon-container {
+        width: 22.5px;
+        height: 22.5px;
+        margin-right: 15px;
+    }
+
+    .capca-icon,
+    .capcb-icon {
+        width: 100%;
+        height: 100%;
+    }
+
+    .capca-number-link,
+    .capcb-number-link {
+        @include font-style(messina_sans, normal, bold, 20px, 28px, #00a6a0);
+    }
+}

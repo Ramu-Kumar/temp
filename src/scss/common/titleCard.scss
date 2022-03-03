@@ -1,0 +1,190 @@
+@import "../_title_mixins";
+@import "../_title_variable";
+
+.elp-card-module {
+  @include display-flex(flex-start);
+  @include media-breakpoint-down(md) {
+    @include display-flex(space-around, flex-start, column);
+  }
+  @include media-breakpoint-down(md) {
+    @include display-flex(space-around, center, column);
+  }
+}
+
+.elp-card-module,.home-card-module {
+  display: -ms-grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  @supports (display: block) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  @include media-breakpoint-down(md) {
+    @include display-flex(space-around, flex-start, column);
+  }
+  @include media-breakpoint-down(sm) {
+    @include display-flex(space-around, center, column);
+  }
+}
+.elp-card-module,.home-card-module {
+  .title-card {
+    border-radius: 1.2rem;
+    padding: 10px;
+    @supports (display: block) {
+      padding: 0;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-right: 0px;
+      margin-bottom: 20px;
+      max-width: 100%;
+      height: 230px;
+      @include display-flex(space-around, flex-start, row);
+    }
+    @include media-breakpoint-down(sm) {
+      margin-right: 0px;
+      margin-bottom: 20px;
+      max-width: 400px;
+      height: 500px;
+      @include display-flex(space-around, flex-start, column);
+    }
+    @include media-custom-breakpoint-down(450px) {
+      max-width: 280px;
+      height: 420px;
+    }
+  }
+}
+
+.title-card:nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+}
+.title-card:nth-child(2) {
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+}
+.title-card:nth-child(3) {
+  -ms-grid-column: 3;
+  -ms-grid-row: 1;
+}
+.title-card:nth-child(4) {
+  -ms-grid-column: 1;
+  -ms-grid-row: 2;
+}
+.title-card:nth-child(5) {
+  -ms-grid-column: 2;
+  -ms-grid-row: 2;
+}
+.title-card:nth-child(6) {
+  -ms-grid-column: 3;
+  -ms-grid-row: 2;
+}
+.title-card:nth-child(7) {
+  -ms-grid-column: 1;
+  -ms-grid-row: 3;
+}
+.title-card:nth-child(8) {
+  -ms-grid-column: 2;
+  -ms-grid-row: 3;
+}
+.title-card:nth-child(9) {
+  -ms-grid-column: 3;
+  -ms-grid-row: 3;
+}
+.title-card:nth-child(10) {
+  -ms-grid-column: 1;
+  -ms-grid-row: 4;
+}
+.title-card:nth-child(11) {
+  -ms-grid-column: 2;
+  -ms-grid-row: 4;
+}
+.title-card:nth-child(12) {
+  -ms-grid-column: 3;
+  -ms-grid-row: 4;
+}
+
+.title-card-img {
+  width: 100%;
+  img {
+    border-top-right-radius: 1.2rem;
+    border-top-left-radius: 1.2rem;
+    max-width: 100%;
+    @include media-breakpoint-down(md) {
+      border-top-left-radius: 1.2rem;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 1.2rem;
+      height: 100%;
+      width: 100%;
+    }
+    @include media-breakpoint-down(sm) {
+      border-top-left-radius: 1.2rem;
+      border-top-right-radius: 1.2rem;
+      border-bottom-left-radius: 0px;
+      max-width: 100%;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    height: 100%;
+    width: 600px;
+  }
+  @include media-breakpoint-down(sm) {
+    max-width: 100%;
+    height: 50%;
+  }
+}
+
+.title-card-footer {
+  @include display-flex(space-between, flex-start, column);
+  border-bottom-right-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
+  height: 250px;
+  padding: 32px 28px;
+  background: $white;
+
+  .title-card-desc {
+    @include font-style-title(24px, 28px, 700);
+    color: $black;
+    width: 100%;
+    @include media-breakpoint-down(sm) {
+      @include font-style-title(20px, 28px, 700);
+    }
+  }
+  .title-card-btn {
+    width: 180px;
+    text-align: center;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 24px 20px;
+  }
+  @include media-breakpoint-down(md) {
+    width:100%;
+    height: 100%;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+  }
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    height: 50%;
+    padding: 32px 28px;
+    border-bottom-left-radius: 1.2rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 1.2rem;
+  }
+  @include media-custom-breakpoint-down(450px) {
+    padding: 20px 16px;
+  }
+}
+.elp-card-title {
+  @include font-style-title(26px, 30px, 700);
+  margin: 30px 0;
+  color: $_title_navi_blue;
+  @include media-breakpoint-down(sm) {
+    @include font-style-title(24px, 28px, 700);
+    margin: 20px 0;
+  }
+}

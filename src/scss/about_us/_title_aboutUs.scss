@@ -1,0 +1,6 @@
+@import "./../_title_mixins";
+@import "./../_title_variable";
+
+ul li::marker {
+    color: #00A6A0;
+}

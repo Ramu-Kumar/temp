@@ -1,0 +1,96 @@
+<svg width="171" height="138" viewBox="0 0 171 138" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="3 1">
+<g id="Group">
+<path id="Vector" opacity="0.3" d="M80.1256 80.121C80.1256 68.025 73.7752 60.3138 61.528 55.929C70.6 52.905 77.8576 44.1354 77.8576 32.0394C77.8576 14.1978 62.7376 3.16016 42.3256 3.16016C22.5184 3.16016 1.19919 12.837 1.19919 39.5994H25.3912C25.3912 30.0738 31.4392 25.2354 40.36 25.2354C48.676 25.2354 53.0608 28.8642 53.0608 34.3074C53.0608 42.1698 47.7688 46.857 37.4872 46.857H30.6832V67.5714H38.092C42.4768 67.5714 46.5592 68.1762 50.0368 69.537C53.6656 70.8978 55.48 73.9218 55.48 78.7602C55.48 84.657 50.188 88.5882 41.2672 88.5882C30.8344 88.5882 24.7864 84.9594 24.7864 74.829H0.291992C0.291992 86.7738 3.92079 95.8458 11.3296 101.743C18.7384 107.639 28.4152 110.663 40.36 110.663C63.04 110.663 80.1256 99.9282 80.1256 80.121Z" fill="#F96459"/>
+<g id="mobile_cntr">
+<path id="Vector_2" fill-rule="evenodd" clip-rule="evenodd" d="M62.5989 94.3244H64.6614V85.4893H62.5989V94.3244Z" fill="#FEDEB6"/>
+<path id="Vector_3" fill-rule="evenodd" clip-rule="evenodd" d="M59.1998 90.935H68.0583V88.8784H59.1998V90.935Z" fill="white"/>
+<path id="Vector_4" fill-rule="evenodd" clip-rule="evenodd" d="M145.155 98.051L138.891 91.8051L140.349 90.3511L146.613 96.597L145.155 98.051Z" fill="#CDF1EF"/>
+<path id="Vector_5" fill-rule="evenodd" clip-rule="evenodd" d="M140.349 98.051L138.891 96.597L145.154 90.3511L146.613 91.8051L140.349 98.051Z" fill="#CDF1EF"/>
+<path id="Vector_6" fill-rule="evenodd" clip-rule="evenodd" d="M93.2009 16.0562L91.7427 17.5081L98.0065 23.7561L99.4647 22.3021L93.2009 16.0562Z" fill="#CDF1EF"/>
+<path id="Vector_7" fill-rule="evenodd" clip-rule="evenodd" d="M98.0066 16.0562L91.7428 22.3021L93.201 23.7561L99.4627 17.5081L98.0066 16.0562Z" fill="#CDF1EF"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="130" y="75" width="21" height="5">
+<g id="mask0">
+<path id="Vector_8" fill-rule="evenodd" clip-rule="evenodd" d="M130.387 75.3467H150.989V79.7704H130.387V75.3467Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0)">
+<g id="Group_2">
+<path id="Vector_9" fill-rule="evenodd" clip-rule="evenodd" d="M150.99 79.7704C149.981 79.7704 149.038 79.1555 148.401 78.082C148.154 77.6645 147.842 77.4033 147.588 77.4033H146.79C146.537 77.4033 146.223 77.6645 145.974 78.084C145.34 79.1555 144.396 79.7704 143.385 79.7704H142.591C141.58 79.7704 140.636 79.1555 140.001 78.082C139.753 77.6645 139.44 77.4033 139.186 77.4033H138.39C138.136 77.4033 137.823 77.6645 137.573 78.084C136.94 79.1555 135.995 79.7704 134.987 79.7704H134.188C133.182 79.7704 132.239 79.1555 131.602 78.084C131.352 77.6645 131.039 77.4033 130.785 77.4033H130.387V75.3467H130.785C131.794 75.3467 132.738 75.9616 133.376 77.0352C133.623 77.4526 133.935 77.7138 134.188 77.7138H134.987C135.24 77.7138 135.552 77.4547 135.799 77.0352C136.439 75.9616 137.381 75.3467 138.39 75.3467H139.186C140.194 75.3467 141.137 75.9616 141.774 77.0331C142.024 77.4547 142.337 77.7138 142.591 77.7138H143.385C143.641 77.7138 143.952 77.4547 144.2 77.0352C144.841 75.9616 145.784 75.3467 146.79 75.3467H147.588C148.595 75.3467 149.538 75.9616 150.175 77.0331C150.426 77.4547 150.736 77.7138 150.99 77.7138V79.7704Z" fill="#FEDEB6"/>
+</g>
+</g>
+<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="53" y="59" width="9" height="10">
+<g id="mask1">
+<path id="Vector_10" fill-rule="evenodd" clip-rule="evenodd" d="M53 59.8853H61.8844V68.7451H53V59.8853Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask1)">
+<g id="Group_3">
+<path id="Vector_11" fill-rule="evenodd" clip-rule="evenodd" d="M57.4418 61.9419C56.13 61.9419 55.0616 63.0072 55.0616 64.3131C55.0616 65.6232 56.13 66.6885 57.4418 66.6885C58.7535 66.6885 59.8219 65.6232 59.8219 64.3131C59.8219 63.0072 58.7535 61.9419 57.4418 61.9419ZM57.4418 68.7451C54.9936 68.7451 52.9991 66.7564 52.9991 64.3131C52.9991 61.8719 54.9936 59.8853 57.4418 59.8853C59.89 59.8853 61.8844 61.8719 61.8844 64.3131C61.8844 66.7564 59.89 68.7451 57.4418 68.7451Z" fill="#F96459"/>
+</g>
+</g>
+<mask id="mask2" mask-type="alpha" maskUnits="userSpaceOnUse" x="53" y="16" width="98" height="107">
+<g id="mask2">
+<path id="Vector_12" fill-rule="evenodd" clip-rule="evenodd" d="M53 122.025H150.989V16.0562H53V122.025Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask2)">
+<g id="Group_4">
+<path id="Vector_13" fill-rule="evenodd" clip-rule="evenodd" d="M68.4935 38.2674H72.338V34.436H68.4935V38.2674ZM66.429 40.3241H74.3985V32.3794H66.429V40.3241Z" fill="#FEDEB6"/>
+<path id="Vector_14" fill-rule="evenodd" clip-rule="evenodd" d="M141.444 51.6849H145.287V47.8535H141.444V51.6849ZM139.382 53.7415H147.349V45.7969H139.382V53.7415Z" fill="#9CE3DF"/>
+<path id="Vector_15" fill-rule="evenodd" clip-rule="evenodd" d="M129.732 119.101C129.732 120.716 117.448 122.026 102.293 122.026C87.1373 122.026 74.853 120.716 74.853 119.101C74.853 117.487 87.1373 116.179 102.293 116.179C117.448 116.179 129.732 117.487 129.732 119.101Z" fill="#CDF1EF"/>
+<path id="Vector_16" fill-rule="evenodd" clip-rule="evenodd" d="M114.67 105.749H90.2276C85.5643 105.749 81.7837 101.98 81.7837 97.3275V46.9222C81.7837 42.2722 85.5643 38.5024 90.2276 38.5024H114.67C119.336 38.5024 123.116 42.2722 123.116 46.9222V97.3275C123.116 101.98 119.336 105.749 114.67 105.749Z" stroke="#022C48" stroke-width="2.0625"/>
+<path id="Vector_17" fill-rule="evenodd" clip-rule="evenodd" d="M102.293 95.7854C101.082 95.7854 100.099 96.7684 100.099 97.9715C100.099 99.1788 101.082 100.16 102.293 100.16C103.502 100.16 104.486 99.1788 104.486 97.9715C104.486 96.7684 103.502 95.7854 102.293 95.7854ZM102.293 101.406C100.394 101.406 98.8488 99.8657 98.8488 97.9715C98.8488 96.0795 100.394 94.5391 102.293 94.5391C104.193 94.5391 105.738 96.0795 105.738 97.9715C105.738 99.8657 104.193 101.406 102.293 101.406Z" fill="#FEC687"/>
+<path id="Vector_18" fill-rule="evenodd" clip-rule="evenodd" d="M107.658 45.6235H102.45H97.2402H102.45H107.658Z" stroke="#022C48" stroke-width="2.0625" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_19" fill-rule="evenodd" clip-rule="evenodd" d="M92.3604 66.3003L88.7758 62.726L90.2339 61.2719L92.3604 63.3902L96.3059 59.458L97.7641 60.912L92.3604 66.3003Z" fill="#9CE3DF"/>
+<path id="Vector_20" fill-rule="evenodd" clip-rule="evenodd" d="M99.8456 64.7588H116.123V62.7021H99.8456V64.7588Z" fill="#022C48"/>
+<path id="Vector_21" fill-rule="evenodd" clip-rule="evenodd" d="M92.3604 74.9463L88.7758 71.3719L90.2339 69.9179L92.3604 72.0383L96.3059 68.104L97.7641 69.558L92.3604 74.9463Z" fill="#022C48"/>
+<path id="Vector_22" fill-rule="evenodd" clip-rule="evenodd" d="M99.8456 73.4047H116.123V71.3481H99.8456V73.4047Z" fill="#9CE3DF"/>
+<path id="Vector_23" fill-rule="evenodd" clip-rule="evenodd" d="M92.3604 83.5927L88.7758 80.0204L90.2339 78.5643L92.3604 80.6847L96.3059 76.7524L97.7641 78.2044L92.3604 83.5927Z" fill="#9CE3DF"/>
+<path id="Vector_24" fill-rule="evenodd" clip-rule="evenodd" d="M99.8456 82.0507H113.124V79.9941H99.8456V82.0507Z" fill="#022C48"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+
+    <script href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script type="application/ecmascript">
+
+    <![CDATA[
+
+    var t1 = gsap.timeline(
+        {
+            repeat: -1,
+            repeatDelay: 1
+        });
+
+    t1.add(
+            gsap.to(
+                        "#mobile_cntr",
+                                {
+                                    translateY:-10,
+                                    delay: 0,
+                                    duration:4,
+                                    ease:Linear.easeNone
+                                }
+                        )
+            );
+
+    t1.add(
+            gsap.to(
+                        "#mobile_cntr",
+                                {
+                                    translateY:0,
+                                    delay: 0,
+                                    duration:4,
+                                    ease:Linear.easeNone    
+                                }
+                        )
+            );
+
+
+        ]]>
+    </script>
+
+</svg>

@@ -1,0 +1,48 @@
+@import "../_title_mixins";
+@import "../_title_variable";
+.card-wrapper {
+  background: $_title_light_Grey;
+  .card-wrapper-title {
+    padding: 20px 182px;
+    p {
+      @include font-style-title(20px, 28px, 400);
+      color: $_title_navi_blue;
+      margin: 0;
+    }
+    h3 {
+      @include font-style-title(32px, 40px, 700);
+      font-family: messina_sans_semi_bold;
+      color: $_title_navi_blue;
+      margin: 0;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .card-wrapper-title {
+      padding: 20px 38px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    .card-wrapper-title {
+      padding: 20px 20px;
+      p {
+        @include font-style-title(16px, 26px, 400);
+      }
+      h3 {
+        @include font-style-title(24px, 28px, 700);
+      }
+    }
+  }
+}
+.home-card-container {
+  padding: 30px 72px 104px 72px;
+  @include media-custom-breakpoint-down(1280px) {
+    padding: 30px 72px 70px 72px;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 30px 38px 48px 38px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 20px 20px 20px 20px;
+  }
+}

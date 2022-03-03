@@ -1,0 +1,290 @@
+@import "./_title_aboutUs.scss";
+
+.section-b-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-right: 91px;
+  margin-bottom: 92px;
+  margin-left: 184px;
+
+  @include media-breakpoint-down(md) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin-top: 35px;
+    margin-right: 0px;
+    margin-bottom: 64px;
+    margin-left: 38px;
+
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  @include media-breakpoint-down(sm) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin-right: 18px;
+    margin-top: -34px;
+    margin-bottom: 40px;
+    margin-left: 22px;
+  }
+
+  .sb-child-a {
+    flex: 1 1 49%;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-down(md) {
+      flex: 1 1 auto;
+    }
+    @include media-breakpoint-down(sm) {
+      flex: 1 1 auto;
+      order: 2;
+    }
+  }
+
+  .sbca-heading-a {
+    @include font-style(messina_sans, normal, normal, 20px, 28px, #002b49);
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      flex: 1 1 auto;
+      @include font-style(messina_sans, normal, normal, 20px, 28px, #002b49);
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      flex: 1 1 auto;
+      @include font-style(messina_sans, normal, normal, 16px, 26px, #002b49);
+    }
+  }
+
+  .sbca-heading-b {
+    margin-top: 1px;
+    margin-bottom: 32px;
+    @include font-style(messina_sans, normal, bold, 32px, 40px, #002b49);
+
+    @include media-breakpoint-down(md) {
+      flex: 1 1 auto;
+      margin-top: auto;
+      margin-right: 92px;
+      margin-bottom: 32px;
+      @include font-style(messina_sans, normal, bold, 32px, 40px, #002b49);
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex: 1 1 auto;
+      margin-top: auto;
+      width: 100%;
+      margin-bottom: 25px;
+      @include font-style(messina_sans, normal, bold, 24px, 28px, #002b49);
+    }
+  }
+
+  .sbca-content-a,
+  .sbca-content-b {
+    flex: 1 1 auto;
+    margin-bottom: 32px;
+    @include font-style(messina_sans, normal, normal, 20px, 28px, #3d3935);
+
+    @include media-breakpoint-down(md) {
+      flex: 1 1 auto;
+      margin-bottom: 28px;
+      @include font-style(messina_sans, normal, normal, 20px, 28px, #3d3935);
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex: 1 1 auto;
+      margin-bottom: 18px;
+      @include font-style(messina_sans, normal, normal, 16px, 26px, #3d3935);
+    }
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  .sbca-content-a {
+    @include media-breakpoint-down(md) {
+      width: 60%;
+      flex: 1 1 auto;
+      margin-bottom: 28px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      flex: 1 1 auto;
+      margin-bottom: 0px;
+    }
+  }
+
+  .sb-child-a > div.sbca-content-b {
+    margin-bottom: 96px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 64px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .sbca-content-b-container {
+    display: flex;
+    flex-direction: column;
+    @include media-breakpoint-down(md) {
+      flex: 1 1 auto;
+      margin-right: 92px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex: 1 1 auto;
+      margin-right: auto;
+    }
+  }
+
+  .sbca-quote-a-container,
+  .sbca-quote-b-container {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+
+    @include font-style(messina_sans, normal, bold, 24px, 28px, #f96459);
+    .sbcaq-prefix-a {
+      opacity: 0.3;
+      width: 23px;
+      height: 58px;
+      margin-left: -40px;
+      margin-right: 16px;
+      margin-top: -7px;
+      @include font-style(messina_sans, normal, 900, 46px, 58px, #f96459);
+    }
+
+    @include media-breakpoint-down(md) {
+      @include font-style(messina_sans, normal, bold, 24px, 28px, #f96459);
+      .sbcaq-prefix-a {
+        opacity: 0.3;
+        width: 23px;
+        height: 58px;
+        margin-left: 0px;
+        margin-top: -7px;
+
+        @include font-style(messina_sans, normal, 900, 46px, 58px, #f96459);
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      @include font-style(messina_sans, normal, bold, 20px, 28px, #f96459);
+      .sbcaq-prefix-a {
+        opacity: 0.3;
+        width: 19px;
+        height: 58px;
+        margin-left: 0px;
+        margin-top: -7px;
+        @include font-style(messina_sans, normal, 900, 38px, 58px, #f96459);
+      }
+    }
+  }
+
+  .sbca-quote-a-container {
+    @include media-breakpoint-down(md) {
+      margin-bottom: 22px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 22px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .sbca-quote-b-container {
+    margin-bottom: 12px;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 24px;
+      margin-right: 92px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-right: auto;
+    }
+  }
+
+  .sbcaqa-content {
+    flex: 1 1 90%;
+    @include font-style(messina_sans, normal, bold, 24px, 28px, #f96459);
+
+    @include media-breakpoint-down(md) {
+      @include font-style(messina_sans, normal, bold, 20px, 28px, #f96459);
+    }
+
+    @include media-breakpoint-down(sm) {
+      @include font-style(messina_sans, normal, bold, 20px, 28px, #f96459);
+    }
+  }
+
+  .sbcaqb-content {
+    flex: 1 1 100%;
+    @include font-style(messina_sans, normal, bold, 24px, 28px, #f96459);
+
+    @include media-breakpoint-down(md) {
+      @include font-style(messina_sans, normal, bold, 24px, 28px, #f96459);
+    }
+
+    @include media-breakpoint-down(sm) {
+      @include font-style(messina_sans, normal, bold, 20px, 28px, #f96459);
+    }
+  }
+
+  .sb-child-b {
+    flex: 1 1 34%;
+    height: 397px;
+    margin-left: 88px;
+    align-self: center;
+    position: initial;
+    top: initial;
+    bottom: initial;
+    order: 2;
+
+    @include media-breakpoint-down(md) {
+      position: absolute;
+      top: -5%;
+      right: -13%;
+      margin-left: 0px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      order: 1;
+      flex: 1 1 auto;
+
+      height: 255px;
+      align-self: center;
+      position: initial;
+      top: initial;
+      bottom: initial;
+    }
+  }
+
+  .sb-img-container {
+    width: 100%;
+    height: 397px;
+    @include media-breakpoint-down(sm) {
+      height: 255px;
+    }
+  }
+
+  .sbcb-img {
+    width: 100%;
+    height: 397px;
+    @include media-breakpoint-down(sm) {
+      order: 1;
+      height: 255px;
+      align-self: center;
+    }
+  }
+}

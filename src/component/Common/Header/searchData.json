@@ -1,0 +1,55 @@
+{
+    "SearchResults":[
+       {
+          "Title":"Title 101",
+          "Description":"",
+          "Url":"/title101",
+          "Path":"/title101"
+       },
+       {
+          "Title":"What is Title Insurance?",
+          "Description":"",
+          "Url":"/title101/title-insurance",
+          "Path":"/title101/title-insurance"
+       },
+       {
+          "Title":"Owner\u0027s and Lender\u0027s Title Insurance: What\u0027s the Difference?",
+          "Description":"Different title insurance policies protect owners and lenders. Learn more about owner’s title insurance, lender’s title insurance and more.",
+          "Url":"/title101/owners-and-lenders-title-insurance",
+          "Path":"/title101/owners-and-lenders-title-insurance"
+       },
+       {
+          "Title":"About Us",
+          "Description":"",
+          "Url":"/about us",
+          "Path":"/about us"
+       },
+       {
+          "Title":"Contact Us",
+          "Description":"",
+          "Url":"/contact us",
+          "Path":"/contact us"
+       }
+    ],
+    "ShowSearchResults":true,
+    "SearchKeyWord":"title",
+    "PageSize":5,
+    "TotalCount":12,
+    "ShowPagination":true,
+    "Pagination":{
+       "TotalItems":12,
+       "CurrentPage":2,
+       "PageSize":5,
+       "TotalPages":3,
+       "StartPage":1,
+       "EndPage":3,
+       "StartIndex":5,
+       "EndIndex":9,
+       "Pages":[
+          1,
+          2,
+          3
+       ]
+    }
+ }
+ 

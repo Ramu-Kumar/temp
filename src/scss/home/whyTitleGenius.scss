@@ -1,0 +1,101 @@
+@import "../_title_mixins";
+@import "../_title_variable";
+
+$messina-sans-ff: messina_sans;
+
+.home-page-section-d-container * {
+    // border: 1px solid black;
+}
+
+.home-page-section-d-container {
+    width: 100%;
+
+    .child-a-heading {
+        margin-top: 113px;
+        margin-left: 185px;
+
+        @include font-style($messina-sans-ff, normal, normal, 20px, 28px, #002b49);
+
+        @include media-custom-breakpoint-down(1185px) {
+            margin-left: 120px;
+        }
+
+        @include media-breakpoint-down(md) {
+            margin-top: 81px;
+            margin-left: 38px;
+
+            @include font-style($messina-sans-ff, normal, normal, 20px, 28px, #002b49);
+        }
+
+        @include media-breakpoint-down(sm) {
+            margin-top: 55px;
+            margin-right: 20px;
+            margin-left: 20px;
+
+            @include font-style($messina-sans-ff, normal, normal, 16px, 26px, #002b49);
+        }
+    }
+
+    .child-b-heading {
+        margin-left: 185px;
+
+        @include font-style($messina-sans-ff, normal, bold, 32px, 40px, #002b49);
+
+        @include media-custom-breakpoint-down(1185px) {
+            margin-left: 120px;
+        }
+        
+        @include media-breakpoint-down(md) {
+            margin-top: 0px;
+            margin-bottom: 55px;
+            margin-left: 38px;
+
+            @include font-style($messina-sans-ff, normal, bold, 32px, 40px, #002b49);
+        }
+
+        @include media-breakpoint-down(sm) {
+            margin-top: 5px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+            @include font-style($messina-sans-ff, normal, bold, 24px, 28px, #002b49);
+        }
+    }
+
+    .child-c-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        margin-right: 186px;
+        margin-left: 185px;
+
+        @include media-custom-breakpoint-down(1185px) {
+            margin-right: 120px;
+            margin-left: 120px;
+        }
+
+        @include media-breakpoint-down(md) {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+
+            margin-right: 58px;
+            margin-bottom: 96px;
+            margin-left: 38px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+
+            margin-top: 0px;
+            margin-right: 20px;
+            margin-bottom: 50px;
+            margin-left: 20px;
+        }
+    }
+}

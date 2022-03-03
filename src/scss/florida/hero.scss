@@ -1,0 +1,119 @@
+@import "../_title_mixins";
+@import "../_title_variable";
+
+.florida-hero-wrapper {
+  width: 100%;
+  padding-left: 182px;
+  position: relative;
+  overflow-x: hidden;
+  .florida-brand-image {
+    height: 650px;
+    float: right;
+    shape-margin: 35px;
+    margin: 25px -40px 10px 10px;
+  }
+  .florida-hero-title-a {
+    @include font-style-title(20px, 28px, 400);
+    color: $_title_navi_blue;
+    margin: 60px 182px 0 0;
+  }
+  .florida-hero-title-b {
+    @include font-style-title(54px, 58px, 900);
+    color: $_title_Teal;
+    margin: 0;
+    margin-right: 182px;
+    font-family: messina_sans_black;
+    @-moz-document url-prefix() {
+      font-weight: lighter;
+    }
+  }
+  .florida-hero-title-c {
+    @include font-style-title(20px, 28px, 400);
+    color: $dark_grey;
+    margin: 40px 0px;
+  }
+
+  .florida-chevron-icon {
+    position: absolute;
+    margin: 20px 20px 20px 184px;
+    left: 0;
+    bottom: 0;
+    img {
+      width: 36px;
+      height: 21px;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding-left: 120px;
+    .florida-brand-image {
+      height: 580px;
+      margin: 40px -40px 10px 10px;
+    }
+    .florida-hero-title-a {
+      margin: 60px 120px 0 0;
+    }
+    .florida-hero-title-b {
+      margin-right: 120px;
+    }
+
+    .florida-chevron-icon {
+      margin: 20px 20px 20px 120px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    padding-left: 38px;
+    .florida-brand-image {
+      height: 500px;
+      margin: 40px -77px 10px 10px;
+    }
+    .florida-hero-title-a {
+      margin: 40px 38px 0 0;
+    }
+    .florida-hero-title-b {
+      margin-right: 38px;
+    }
+    .florida-hero-title-c {
+      margin: 30px 38px 15px 0px;
+    }
+    .florida-chevron-icon {
+      display: none;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    width: 100%;
+    .florida-brand-image {
+      margin: 0;
+      margin-left: calc(50% - 183px);
+      height: 320px;
+      padding-top: 20px;
+      float: none;
+    }
+    .florida-hero-title-a {
+      @include font-style-title(16px, 26px, 400);
+      margin: 20px 10px 10px 10px;
+    }
+    .florida-hero-title-b {
+      margin: 0px 20px 0px 10px;
+      @include font-style-title(30px, 36px, 900);
+    }
+    .florida-hero-title-c {
+      margin: 20px 20px 10px 10px;
+      @include font-style-title(16px, 26px, 400);
+    }
+  }
+
+  @include media-custom-breakpoint-down(400px) {
+    height: auto;
+    .florida-brand-image {
+      margin: 0;
+      height: auto;
+      width: 100%;
+    }
+  }
+}

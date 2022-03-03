@@ -1,0 +1,170 @@
+@import "_title_mixins";
+@import "_title_variable";
+
+.title-faq-header {
+  padding: 80px 80px 80px 182px;
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.175);
+  h1 {
+    margin: 0;
+    font-family: messina_sans;
+    @include font-style-title(54px, 58px, 900);
+    color: $_title_Teal;
+    width: 100%;
+  }
+  .title-faq-description {
+    @include font-style-title(16px, 26px, 400);
+    margin: 10px 0px;
+    color: $_title_navi_blue;
+    @include media-breakpoint-down(sm) {
+      margin: 5px 0px;
+      @include font-style-title(12px, 16px, 400);
+    }
+  }
+  .faq-search {
+    position: relative;
+    margin: 35px 0px;
+    width: 60%;
+    input {
+      @include font-style-title(16px, 26px, 400);
+      padding: 12px;
+      width: 100%;
+      border: 1.5px solid #c7c9c7;
+      border-radius: 5px;
+      outline: none;
+
+      @include media-breakpoint-down(sm) {
+        @include font-style-title(12px, 16px, 400);
+      }
+    }
+    .faq-search-icon {
+      position: absolute;
+      right: 20px;
+      top: 40%;
+      width: 13px;
+      height: 13px;
+    }
+  }
+  .faq-navlink-container {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #ffffff;
+
+    .faq-navlink {
+      width: 33.33%;
+      padding: 0.5em 0.5em 0.5em 1.5em;
+      box-sizing: border-box;
+      a {
+        @include font-style-title(16px, 26px, 700);
+        color: $_title_navi_blue;
+        @include media-breakpoint-down(sm) {
+          @include font-style-title(12px, 16px, 700);
+        }
+      }
+      @include media-breakpoint-down(md) {
+        width: 50%;
+      }
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
+    }
+    .faq-navlink:before {
+      content: "";
+      border-color: transparent $_title_coral;
+      border-style: solid;
+      border-width: 0.35em 0 0.35em 0.45em;
+      display: block;
+      height: 0;
+      width: 0;
+      left: -1.5em;
+      top: 1em;
+      position: relative;
+    }
+
+    &:after {
+      content: "";
+      flex: auto;
+    }
+  }
+  ul {
+    margin: 0 !important;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start: 0px !important;
+    padding: 0px;
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 60px 60px 60px 80px;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 48px 48px 48px 38px;
+    h1 {
+      @include font-style-title(42px, 45px, 900);
+    }
+    .faq-search {
+      margin: 25px 0px;
+      width: 80%;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 20px 20px 20px 20px;
+    h1 {
+      @include font-style-title(26px, 30px, 700);
+    }
+    .faq-search {
+      width: 100%;
+      margin: 15px 0px;
+    }
+  }
+}
+
+.title-faqs-richText {
+  width: 100%;
+  padding: 100px 291px 100px 291px;
+  .faqs-section-container {
+    h4 {
+      color: $_title_Teal;
+      font-family: messina_sans_black;
+      @include font-style-title(30px, 38px, 900);
+      @include media-breakpoint-down(sm) {
+        @include font-style-title(24px, 28px, 700);
+      }
+    }
+    .faqs-section {
+      margin: 64px 0px 104px 0px;
+      h6 {
+        color: $_title_navi_blue;
+        margin: 48px 0px 20px 0px;
+        @include font-style-title(24px, 28px, 700);
+      }
+      .faq-answer {
+        margin: 25px 0px;
+      }
+      p {
+        color: $dark_grey;
+        @include font-style-title(20px, 28px, 400);
+      }
+      @include media-breakpoint-down(sm) {
+        margin: 40px 0px 48px 0px;
+        h6 {
+          margin: 30px 0px 20px 0px;
+          @include font-style-title(20px, 28px, 700);
+        }
+        .faq-answer {
+          margin: 20px 0px;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding: 80px 120px 80px 120px;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 60px 97px 60px 97px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 30px 20px 30px 20px;
+  }
+}

@@ -1,0 +1,391 @@
+@import "_title_mixins";
+@import "_title_variable";
+
+.title-navbar {
+  position: relative;
+  position: fixed;
+  @include font-style-title(16px, 26px, 400);
+  @include display-flex(space-between);
+  width: 100%;
+  z-index: 11;
+  color: $_title_navi_blue;
+  flex-wrap: wrap;
+  height: 80px;
+  border-bottom: 1px solid $lite-grey;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 60px;
+  }
+  .navbar-menu {
+    width: 25px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    display: none;
+    @include media-breakpoint-down(md) {
+      display: inline-block;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 20px;
+    }
+  }
+  .navbar-title-brand {
+    img {
+      width: 140px;
+      @include media-breakpoint-down(md) {
+        margin: 0 20px;
+      }
+      @include media-breakpoint-down(sm) {
+        width: 112px;
+        margin: 0 10px;
+      }
+      @include media-custom-breakpoint-down($xsm) {
+        width: 95px;
+      }
+    }
+  }
+  .navbar-collapse {
+    position: static;
+    z-index: 11;
+    .title-sidebar {
+      display: none;
+      @include media-breakpoint-down(md) {
+        display: block;
+      }
+    }
+    @include media-breakpoint-down(md) {
+      background: $white;
+      width: 70%;
+      position: absolute;
+      top: 80px;
+      left: 0px;
+    }
+    @include media-breakpoint-down(sm) {
+      top: 60px;
+      width: 100%;
+    }
+  }
+}
+
+.navbar-logo-content {
+  height: 100%;
+  @include display-flex(center);
+}
+
+.show-item {
+  display: block;
+}
+.navbar-expand-lg .navbar-nav {
+  padding: 0px 16px;
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+
+  li {
+    font-weight: 700;
+  }
+
+  .nav-link {
+    white-space: nowrap;
+    font-weight: bold;
+    overflow: hidden;
+    @include display-flex(center);
+    color: $_title_navi_blue !important;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    @include media-breakpoint-down(lg) {
+      padding-right: 0.5rem !important;
+      padding-left: 0.5rem !important;
+    }
+    img {
+      width: 25px;
+    }
+  }
+  .nav-item {
+    position: relative;
+    @include display-flex(center);
+    .dropdown-menu {
+      top: 18px !important;
+      left: -15px !important;
+      padding: 10px;
+      border-radius: 0px;
+      width: 400px;
+      transform: translate3d(0px, 42px, 0px) !important;
+      a:before,
+      a:after {
+        content: none !important;
+      }
+      .dropdown-item {
+        color: $_title_navi_blue;
+        padding: 5px 10px;
+        white-space: normal !important;
+      }
+      .dropdown-item:active {
+        color: $_title_navi_blue !important;
+        background: white !important;
+      }
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+        position: static !important;
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+      }
+    }
+    a:focus {
+      outline-width: 0px !important;
+    }
+    a:focus::before {
+      content: "";
+      position: absolute;
+      border-color: $md-grey;
+      border-style: solid;
+      background: $md-grey;
+      border-width: 2px;
+      left: 0em;
+      bottom: -20px;
+      width: 100%;
+    }
+
+    a:focus::after {
+      content: none !important;
+    }
+    .dropdown-toggle::after {
+      content: none !important;
+    }
+  }
+}
+
+.dropdown.show .arrow-icon-Title101,
+.dropdown.show .arrow-icon-states {
+  transform: rotate(180deg);
+}
+
+.arrow-icon-Title101,
+.arrow-icon-states {
+  transition: 0.5s transform;
+}
+
+.dropdown.show:after {
+  content: "";
+  position: absolute;
+  border-color: $md-grey;
+  border-style: solid;
+  background: $md-grey;
+  border-width: 2px;
+  left: 0em;
+  bottom: -20px;
+  width: 100%;
+}
+
+.navbar-right-content {
+  @include display-flex(space-between);
+  .navbar-search {
+    @include display-flex(center);
+    margin: 5px 16px;
+    @include media-breakpoint-down(lg) {
+      margin: 5px 8px;
+    }
+    .collapse-label {
+      color: $_title_navi_blue;
+      display: inline-block;
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+    img {
+      width: 13px;
+      margin: 10px;
+      @include media-custom-breakpoint-down($xsm) {
+        margin: 0px;
+      }
+    }
+  }
+  .navbar-user-profile {
+    @include display-flex(center);
+    margin: 5px 16px;
+    @include media-breakpoint-down(lg) {
+      margin: 5px 8px;
+    }
+    .collapse-label {
+      color: $_title_navi_blue;
+      display: inline-block;
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+    img {
+      width: 15px;
+      margin: 10px;
+      @include media-custom-breakpoint-down($xsm) {
+        margin: 0px;
+      }
+    }
+  }
+}
+.btn-quote {
+  @include display-flex(center);
+  @include font-style-title(16px, 28px, 700);
+  padding: 2px 16px;
+  border-radius: 25px;
+  outline: none;
+  width: 140px;
+  height: 32px;
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
+.btn-container {
+  display: none;
+  @include media-breakpoint-down(sm) {
+    @include display-flex(center);
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $lite-grey;
+  }
+}
+
+.title-sidebar {
+  overflow: hidden;
+
+  background-color: $white;
+  width: 100%;
+  z-index: 11;
+  border: 1px solid $lite-grey;
+}
+.btn-custom {
+  @include display-flex(center);
+  width: 100%;
+  padding: 10px 16px;
+  @include font-style-title(16px, 28px, 700);
+  border-radius: 28px;
+  outline: none;
+  margin: 45px 0px 20px 0px;
+  @include media-custom-breakpoint-down(600px) {
+    margin: 25px 0px 20px 0px;
+  }
+  @include media-custom-breakpoint-down(300px) {
+    margin: 15px 0px 20px 0px;
+  }
+}
+.btn-container .navbar-user-profile {
+  @include display-flex(center);
+  img {
+    width: 20px;
+    margin: 10px;
+  }
+  a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0px;
+  }
+  a:focus {
+    background: $_title_navi_blue !important;
+  }
+  a:visited {
+    background: $_title_navi_blue !important;
+  }
+  a:active {
+    background: $_title_navi_blue !important;
+  }
+}
+
+.title-sidebar a {
+  @include font-style-title(16px, 26px, 700);
+  float: left;
+  display: inline;
+  color: $_title_navi_blue;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-decoration: none;
+}
+
+.title-dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.title-dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: $_title_navi_blue;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: inherit;
+  font-family: inherit;
+  border-bottom: 1px solid $lite-grey;
+  margin: 0;
+  display: flex !important;
+  @include display-flex(space-between);
+  @include font-style-title(16px, 26px, 700);
+  img {
+    width: 25px;
+  }
+}
+
+.dropdown-content {
+  border-bottom: 1px solid $lite-grey;
+  display: none;
+}
+
+.dropdown-content a {
+  @include font-style-title(16px, 26px, 400);
+  float: none;
+  color: $_title_navi_blue;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  background: $white;
+}
+a:focus {
+  outline-width: 0 !important;
+}
+
+.collapse-link {
+  border-bottom: 1px solid $lite-grey;
+}
+
+@include media-breakpoint-down(lg) {
+  .title-sidebar responsive {
+    position: relative;
+  }
+  .title-sidebar.responsive a:not(:first-child) {
+    float: none;
+    text-align: left;
+  }
+  .title-sidebar.responsive .title-dropdown {
+    float: none;
+  }
+  .title-sidebar.responsive .dropdown-content {
+    position: relative;
+  }
+  .title-sidebar.responsive .title-dropdown .dropbtn {
+    height: 65px;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .title-sidebar .collapse-link {
+    @include display-flex(flex-start);
+    height: 65px;
+  }
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: $_title_Teal !important;
+  text-decoration: none;
+  background-color: $white !important;
+  text-decoration: underline !important;
+}
+
+a:hover {
+  color: $_title_Teal !important;
+}

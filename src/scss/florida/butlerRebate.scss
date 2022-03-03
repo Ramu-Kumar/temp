@@ -1,0 +1,161 @@
+@import "../_title_mixins";
+@import "../_title_variable";
+
+.butler-rebate-wrapper {
+  background: $_title_light_Grey;
+  .butler-rebate-right-container {
+    shape-outside: content-box;
+    z-index: 9;
+    shape-margin: 150px;
+    position: relative;
+    background: white;
+    border-radius: 4%;
+    box-shadow: 0 0px 6px -3px rgba(0, 0, 0, 0.175);
+    max-width: 410px;
+    float: right;
+    padding: 40px;
+    margin: 132px 82px 40px 50px;
+    .butler-rebate-rc-title {
+      color: $_title_navi_blue;
+      @include font-style-title(24px, 28px, 700);
+      font-family: messina_sans_semi_bold;
+      @-moz-document url-prefix() {
+        font-weight: lighter;
+      }
+    }
+    .butler-rebate-rc-desc {
+      color: $dark_grey;
+      @include font-style-title(20px, 28px, 400);
+      margin: 20px 0px 0px 0px;
+    }
+  }
+  .butler-rebate-left-container {
+    z-index: 0;
+    position: relative;
+    max-width: 72%;
+    background: white;
+    padding: 104px 220px 36px 182px;
+    .butler-rebate-lc-title-a {
+      @include font-style-title(20px, 28px, 400);
+      color: $_title_navi_blue;
+      margin: 0;
+    }
+    .butler-rebate-lc-title-b {
+      @include font-style-title(32px, 40px, 700);
+      color: $_title_navi_blue;
+      font-family: messina_sans_semi_bold;
+      margin: 0;
+      margin-bottom: 15px;
+      @-moz-document url-prefix() {
+        font-weight: lighter;
+      }
+    }
+    .butler-rebate-lc-desc {
+      color: $dark_grey;
+      @include font-style-title(20px, 28px, 400);
+      margin: 0;
+      padding: 16px 0px 16px 0px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    .butler-rebate-right-container {
+      max-width: 360px;
+    }
+    .butler-rebate-left-container {
+      padding: 84px 140px 36px 120px;
+      max-width: 78%;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .butler-rebate-right-container {
+      max-width: 310px;
+      shape-margin: 70px;
+      padding: 20px;
+      margin: 197px 38px 50px 50px;
+    }
+    .butler-rebate-left-container {
+      max-width: 84%;
+      padding: 64px 38px 0px 38px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    .butler-rebate-right-container {
+      float: none;
+      margin: auto;
+      margin-bottom: 40px;
+      .butler-rebate-rc-title {
+        @include font-style-title(20px, 28px, 700);
+        @-moz-document url-prefix() {
+          font-weight: lighter;
+        }
+      }
+      .butler-rebate-rc-img{
+        margin: 0px calc(50% - 69px)
+      }
+      .butler-rebate-rc-desc {
+        @include font-style-title(16px, 26px, 400);
+        margin: 10px 0px 0px 0px;
+      }
+    }
+    .butler-rebate-left-container {
+      max-width: 100%;
+      padding: 20px 20px 4px 20px;
+      .butler-rebate-lc-title-b {
+        @include font-style-title(24px, 28px, 700);
+        margin-bottom: 10px;
+        @-moz-document url-prefix() {
+          font-weight: lighter;
+        }
+      }
+      .butler-rebate-lc-desc {
+        @include font-style-title(16px, 26px, 400);
+      }
+    }
+  }
+  @include media-custom-breakpoint-down(350px) {
+    .butler-rebate-right-container {
+      margin: 0px 20px 40px 20px;
+    }
+  }
+
+  .promulagate-cont-child-c {
+    padding: 16px 0px 16px 0px;
+    width: 100%;
+
+    .promulagate-rc-title {
+      @include font-style-title(24px, 28px, 700);
+      color: $_title_navi_blue;
+      font-family: messina_sans_semi_bold;
+      margin: 0;
+      margin-bottom: 15px;
+      @-moz-document url-prefix() {
+        font-weight: lighter;
+      }
+
+      @include media-breakpoint-down(sm) {
+        @include font-style-title(20px, 28px, 700);
+        @-moz-document url-prefix() {
+          font-weight: lighter;
+        }
+      }
+    }
+
+    .promulagate-rc-btn {
+      margin: 32px 0;
+      width: 220px;
+      @include font-style-title(20px, 28px, 700);
+      border-radius: 28px;
+      outline: none;
+      border: none;
+      background: $_title_navi_blue;
+      color: $white;
+      @include display-flex(center);
+      padding: 16px;
+
+      @include media-breakpoint-down(sm) {
+        margin: 16px 0;
+        width: 100%;
+      }
+    }
+  }
+}

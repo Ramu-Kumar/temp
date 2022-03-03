@@ -1,0 +1,211 @@
+@import "../_title_mixins";
+@import "../_title_variable";
+
+$DownArrow :"../../assets/static/icons/arrow-down-custom.svg";
+$UpArrow : "../../assets/static/icons/arrow-up-custom.svg";
+
+.florida-map-container {
+  background: $_title_light_Grey;
+  position: relative;
+  @include display-flex(flex-end, center);
+  padding: 105px 182px 105px 182px;
+  .florida-svg-img {
+    max-width: 750px;
+    max-height: 730px;
+  }
+
+  .florida-dropdown-container {
+    position: absolute;
+    left: 182px;
+    top: 35%;
+    flex-direction: column;
+    width: 420px;
+    background: $white;
+    border-radius: 4%;
+    padding: 32px;
+    p {
+      margin: 0;
+      color: $_title_navi_blue;
+      @include font-style-title(16px, 26px, 400);
+    }
+    h5 {
+      margin: 0;
+      color: $_title_navi_blue;
+      @include font-style-title(26px, 30px, 700);
+    }
+    .expanded-view-descption {
+      margin: 25px 0px;
+      color: $dark_grey;
+      b {
+        color: $_title_navi_blue;
+      }
+    }
+    .clear-drop-selection {
+      cursor: pointer;
+      @include font-style-title(16px, 26px, 700);
+      @include display-flex(flex-start, center);
+      color: $_title_Teal;
+      img {
+        margin: 0px 10px;
+        width: 15px;
+      }
+    }
+  }
+
+  .florida-desc-container {
+    position: absolute;
+    left: 182px;
+    bottom: 105px;
+    display: flex;
+    flex-direction: column;
+    .map-desc-parent {
+      @include display-flex(flex-start, center);
+      margin: 12px 12px;
+    }
+    .map-desc-child-a {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+    .map-desc-child-b {
+      margin-left: 12px;
+      color: $dark_grey;
+      @include font-style-title(16px, 26px, 400);
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding: 80px 120px 80px 120px;
+    .florida-desc-container {
+      left: 120px;
+      bottom: 80px;
+    }
+    .florida-dropdown-container {
+      left: 120px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    padding: 64px 38px 64px 38px;
+    .florida-desc-container {
+      left: 38px;
+      bottom: 64px;
+      flex-direction: row;
+      .map-desc-parent {
+        margin: 10px 10px;
+      }
+    }
+    .florida-dropdown-container {
+      left: 38px;
+      width: 355px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 20px 20px 40px 20px;
+    flex-direction: column;
+    .florida-svg-img {
+      max-width: 100%;
+      height: auto;
+    }
+    .florida-dropdown-container {
+      position: static;
+      padding: 20px;
+      margin: 20px 0px 40px 0px;
+      width: 420px;
+      h5 {
+        @include font-style-title(20px, 28px, 700);
+      }
+      .expanded-view-descption {
+        margin: 18px 0px;
+      }
+    }
+    .florida-desc-container {
+      left: 20px;
+      bottom: 40px;
+      flex-direction: column;
+      .map-desc-parent {
+        margin: 8px 8px;
+      }
+      .map-desc-child-a {
+        width: 8px;
+        height: 8px;
+      }
+      .map-desc-child-b {
+        margin-left: 8px;
+        @include font-style-title(12px, 16px, 400);
+      }
+    }
+  }
+  @include media-custom-breakpoint-down(460px) {
+    .florida-dropdown-container {
+      width: 100%;
+    }
+  }
+}
+
+.fla-select-drop::-ms-expand {
+  display: none;
+}
+
+
+.fla-select-drop::-webkit-scrollbar {
+  margin-right: 5px;
+  width: 15px;
+}
+
+.fla-select-drop::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #ffffff;
+}
+
+.fla-select-drop {
+  scrollbar-width: thin;
+  scrollbar-color: #ccc $white;
+  scrollbar-arrow-color: #ccc;
+  scrollbar-3dlight-color: $white;
+  scrollbar-highlight-color: #ccc;
+  scrollbar-face-color: #ccc;
+  scrollbar-shadow-color: #ccc;
+  scrollbar-track-color: $white;
+  scrollbar-width: 10px;
+}
+.fla-select-drop::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border: 3px solid $white;
+  border-radius: 7px;
+}
+
+.fla-select-drop {
+  position: relative;
+  padding: 5px 10px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #3d3935;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-position-x: 160px;
+  background-position-y: 0;
+  background-repeat: no-repeat;
+  background-color: white;
+  @supports (display: block) {
+    background-position-x: right;
+  }
+  
+
+  .fla-drop-option {
+    padding: 10px 10px;
+    margin: 10px;
+    font-family: messina_sans;
+    @-moz-document url-prefix() {
+      font-family: Arial;
+    }
+  }
+}
+
+
+.default-select-wrapper {
+  position: relative;
+  user-select: none;
+  width: 100%;
+  margin: 40px 0px 10px 0px;
+}

@@ -1,0 +1,127 @@
+@import "../_title_mixins";
+@import "../_title_variable";
+
+.home-hero-wrapper {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  .home-hero-brand-img {
+    height: 660px;
+    float: right;
+    shape-margin: 40px;
+    margin: 24px -40px 10px 10px;
+  }
+  .home-hero-title {
+    color: $_title_coral;
+    margin: 136px 182px 16px 182px;
+    font-family: messina_sans_black;
+    @include font-style-title(54px, 58px, 900);
+    @-moz-document url-prefix() {
+      font-weight: lighter;
+    }
+  }
+  .home-hero-desc {
+    @include font-style-title(24px, 28px, 700);
+    color: $_title_navi_blue;
+    margin: 16px 182px 16px 182px;
+  }
+  .home-hero-btn {
+    margin: 56px 182px 56px 182px;
+    width: 220px;
+    @include font-style-title(20px, 28px, 700);
+    border-radius: 28px;
+    outline: none;
+    border: none;
+    background: $_title_navi_blue;
+    color: $white;
+    @include display-flex(center);
+    padding: 16px;
+  }
+
+  .home-hero-chevron-icon {
+    position: absolute;
+    margin: 20px 20px 20px 184px;
+    left: 0;
+    bottom: 0;
+    img {
+      width: 36px;
+      height: 21px;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .home-hero-brand-img {
+      height: 500px;
+      shape-margin: 30px;
+    }
+    .home-hero-title {
+      margin: 80px 120px 16px 120px;
+    }
+    .home-hero-desc {
+      margin: 16px 120px 16px 120px;
+    }
+    .home-hero-btn {
+      margin: 32px 120px 32px 120px;
+      width: 210px;
+    }
+
+    .home-hero-chevron-icon {
+      margin: 20px 20px 20px 120px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .home-hero-brand-img {
+      height: 410px;
+      margin: 115px -40px 10px 10px;
+    }
+    .home-hero-title {
+      margin: 48px 38px 16px 38px;
+    }
+    .home-hero-desc {
+      margin: 16px 38px 16px 38px;
+    }
+    .home-hero-btn {
+      padding: 11px 16px;
+      margin: 26px 38px 26px 38px;
+      width: 200px;
+      @include font-style-title(16px, 28px, 700);
+    }
+    .home-hero-chevron-icon {
+      display: none;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: auto;
+    width: 100%;
+    padding: 0;
+    .home-hero-brand-img {
+      float: none;
+      margin: 25px 0px 0px calc(50% - 240px);
+      height: 320px;
+    }
+    .home-hero-title {
+      margin: 20px 20px 5px 20px;
+      @include font-style-title(30px, 36px, 900);
+      @-moz-document url-prefix() {
+        font-weight: lighter;
+      }
+    }
+    .home-hero-desc {
+      @include font-style-title(20px, 28px, 600);
+
+      margin: 5px 20px 5px 20px;
+    }
+    .home-hero-btn {
+      margin: 15px 20px 15px 20px;
+      width: 228px;
+    }
+  }
+
+  @include media-custom-breakpoint-down(400px) {
+    .home-hero-brand-img {
+      height: 250px;
+      margin: 15px 0px 0px calc(50% - 188px);
+    }
+  }
+}
